@@ -19,6 +19,13 @@ apt install -y flex bison
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+- バージョン確認
+```
+$ cargo --version
+cargo 1.89.0 (c24e10642 2025-06-23)
+$ rustc --version
+rustc 1.89.0 (29483883e 2025-08-04)
+```
 
 ## QEMUのインストール
 本書のバージョンに合わせて、v9をインストールすることにする。   
@@ -30,4 +37,10 @@ git checkout -t origin/stable-9.2
 ./configure
 make
 make install
+```
+- バージョン確認
+```
+$ qemu-system-x86_64 --version
+QEMU emulator version 9.2.4 (v9.2.4)
+Copyright (c) 2003-2024 Fabrice Bellard and the QEMU Project developers
 ```
