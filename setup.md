@@ -6,13 +6,19 @@
 - OS：Ubuntu Desktop 24.04.3 LTS
 
 ## 基本パッケージのインストール
+- 基本パッケージ
 ```
-apt install -y curl vim lv git
+apt install -y curl
 apt install -y build-essential
 apt install -y python3-venv
 apt install -y ninja-build meson pkg-config libglib2.0-dev libpixman-1-dev libfdt-dev libnfs-dev libiscsi-dev zlib1g-dev
 apt install -y flex bison
 apt install -y netcat-openbsd
+```
+- 便利なパッケージ   
+滝原がよく使う便利なパッケージも入れておく。
+```
+apt install -y vim lv tree
 ```
 
 ## Rustのセットアップ
